@@ -2,7 +2,6 @@ import React from 'react';
 import { Bookmark, Share2, Star } from 'lucide-react';
 
 const Menu = ({ item }) => {
-  // rating Function 
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -21,7 +20,8 @@ const Menu = ({ item }) => {
   };
 
   return (
-    <div className="flex justify-between items-start w-[600px] p-6 bg-white rounded-lg shadow-sm border-2 border-gray-200 hover:shadow-2xl transition duration-300 ease-in-out overflow-hidden">
+    <div className="flex justify-between items-start w-full max-w-[600px] min-w-0 p-4 sm:p-6 bg-white rounded-lg shadow-sm border-2 border-gray-200 hover:shadow-2xl transition duration-300 ease-in-out overflow-hidden">
+      
       {/* Left part */}
       <div className="flex flex-col justify-between gap-2 w-[60%] h-full">
         <div className="flex items-center gap-2">
